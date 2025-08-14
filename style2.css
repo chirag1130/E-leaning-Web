@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9faff;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  background: #302b63;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar nav a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(-45deg, #a1c4fd, #c2e9fb, #fdc3c3, #fbc2eb);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+  color: #0e0e0e;
+}
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero .button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  background: #302b63;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.hero .button:hover {
+  background: #5f72bd;
+}
+
+/* Section Layout */
+section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+h3 {
+  color: #302b63;
+  margin-bottom: 1rem;
+}
+
+/* Card Layout for All Points */
+.card-list {
+  display: flex;
+  flex-direction: column;   /* Stack cards vertically */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: #f5f8ff;
+  border-left: 4px solid #302b63;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  color: #555;
+  font-style: italic;
+  box-shadow: 0 2px 10px rgba(48,43,99,0.07);
+  width: 100%;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.card:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 22px rgba(48, 43, 99, 0.16);
+}
+
+/* FAQ */
+.faq-item {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f4f4fb;
+  border-radius: 6px;
+}
+.faq-item h4 {
+  margin: 0 0 0.5rem;
+  color: #302b63;
+}
+
+/* update */
+input, button[type="submit"] {
+    width: 180px;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+button[type="submit"] {
+    background: #302b63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+
+/* Signup Form */
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup input,
+.signup button {
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.signup button {
+  background: #302b63;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.signup button:hover {
+  background: #5f72bd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  background: #ece9fc;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-list {
+    flex-direction: column;
+  }
+}
